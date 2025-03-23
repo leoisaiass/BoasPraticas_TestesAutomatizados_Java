@@ -56,7 +56,7 @@ class AbrigoControllerTest {
         String json = """
                 {
                     "nome" : "Abrigo Feliz",
-                    "telefone" : "(11) 2302-6795",
+                    "telefone" : "(11)2302-6795",
                     "email" : "email@example.com"
                 }
                 """;

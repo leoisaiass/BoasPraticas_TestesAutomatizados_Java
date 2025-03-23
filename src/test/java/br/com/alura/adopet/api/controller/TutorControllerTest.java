@@ -50,8 +50,8 @@ class TutorControllerTest {
     }
 
     @Test
-    @DisplayName("Deve retornar 404 para cadastro inválido de tutor")
-    void deveRetornar404Cenario01() throws Exception {
+    @DisplayName("Deve retornar 400 para cadastro inválido de tutor")
+    void deveRetornar400Cenario01() throws Exception {
 
         // Arrange
         var json = """
@@ -68,7 +68,7 @@ class TutorControllerTest {
         ).andReturn().getResponse();
 
         // Assert
-        assertEquals(404, response.getStatus());
+        assertEquals(400, response.getStatus());
     }
 
     @Test
@@ -99,7 +99,7 @@ class TutorControllerTest {
 
     @Test
     @DisplayName("Deve retornar 400 para cadastro inválido de tutor")
-    void deveRetornar400Cenario01() throws Exception {
+    void deveRetornar400Cenario02() throws Exception {
 
         // Arrange
         var json = """
